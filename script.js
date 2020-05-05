@@ -248,7 +248,7 @@ function quizResult() {
       .querySelector(".gif")
       .setAttribute(
         "src",
-        "./img/c2c8349a34233a7276a94d1666939cd6_job-clipart-gif-find-share-on-giphy_442-302.gif"
+        "./img//c2c8349a34233a7276a94d1666939cd6_job-clipart-gif-find-share-on-giphy_442-302.gif"
       );
   }
 
@@ -268,16 +268,13 @@ function gameOver() {
 }
 
 startAgainBtn.addEventListener("click", () => {
-  quizBox.classList.add("show");
-  quizOverBox.classList.remove("show");
   resetQuiz();
-  nextQuestion();
+  quizOverBox.classList.remove("show");
+  quizBox.classList.add("show");
 });
 
 goToHomeBtn.addEventListener("click", () => {
-  quizOverBox.classList.remove("show");
-  quizHomeBox.classList.remove("hide");
-  resetQuiz();
+  window.location.reload();
 });
 
 startQuizBtn.addEventListener("click", () => {
@@ -333,9 +330,10 @@ function hideTimeUp() {
 }
 
 function resetQuiz() {
-  timeLimit = 15;
   attempt = 0;
   score = 0;
-  number = 0;
+  correctAnswers.innerHTML = score;
+  number = 1;
+  currentQuestionNum.innerHTML = number + " / " + 5;
   myArray = [];
 }
