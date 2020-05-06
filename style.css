@@ -59,7 +59,7 @@ body.light {
   background-color: #f3f4f6;
   border: 2px solid #ffffff;
   padding: 14px 40px;
-  color: #059e4c;
+  color: #0000009f;
   font-weight: 800;
   font-size: 20px;
   border-radius: 30px;
@@ -70,7 +70,7 @@ body.light {
 
 .btn.light {
   background-color: #000000c5;
-  border: 2px solid #0000009f;
+  border: 2px solid #00000015;
   padding: 14px 40px;
   color: #ffffff;
   font-size: 20px;
@@ -230,7 +230,7 @@ body.light {
 }
 
 .quiz-box .stats .score-board .correct-answers {
-  font-weight: 800;
+  font-weight: 500;
   color: #059e4c;
 }
 
@@ -245,17 +245,35 @@ body.light {
     display: flex;
     flex-direction: column;
   }
-  .quiz-box .option-box .option {
+  body .quiz-box .option-box .option {
     align-self: center;
+    font-size: 16px;
     width: 100%;
   }
-  .gif {
+  body .gif {
     width: 100%;
   }
   .start-again-quiz-btn,
   .go-home-btn {
     width: 100%;
     margin-bottom: 20px;
+  }
+  body .quiz-box .question-box .question-text {
+    font-size: 25px;
+  }
+  body .quiz-box .stats .quiz-time .remaining-time {
+    height: 50px;
+    width: 50px;
+    font-size: 28px;
+    line-height: 46px;
+    font-weight: 600;
+  }
+  body .quiz-box .stats .score-board {
+    font-size: 28px;
+  }
+  body .btn {
+    font-size: 30px;
+    font-weight: 400;
   }
 }
 
