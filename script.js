@@ -1,12 +1,14 @@
 const questionText = document.querySelector(".question-text");
 let questionIndex = 0;
 const optionBox = document.querySelector(".option-box");
+const option1 = document.querySelector(".option");
 const currentQuestionNum = document.querySelector(".current-question-num");
 const nextQuestionBtn = document.querySelector(".next-question-btn");
 const correctAnswers = document.querySelector(".correct-answers");
-const quizOverBox = document.querySelector(".quiz-over-box");
 const quizBox = document.querySelector(".quiz-box");
+const questionBox = document.querySelector(".question-box");
 const quizHomeBox = document.querySelector(".quiz-home-box");
+const quizOverBox = document.querySelector(".quiz-over-box");
 const totalQuestions = document.querySelector(".total-questions");
 const totalAttempt = document.querySelector(".total-attempt");
 const totalCorrect = document.querySelector(".total-correct");
@@ -17,6 +19,11 @@ const goToHomeBtn = document.querySelector(".go-to-home-btn");
 const startQuizBtn = document.querySelector(".start-quiz-btn");
 const remainingTime = document.querySelector(".remaining-time");
 const timeUpText = document.querySelector(".time-up-text");
+const theme = document.querySelector(".theme");
+const body = document.querySelector("body");
+const customBox = document.querySelector(".custom-box");
+const quizHomeBoxH4 = document.querySelector(".quiz-home-box h4");
+const btn = document.querySelector(".btn");
 let attempt = 0;
 let score = 0;
 let number = 0;
@@ -337,3 +344,19 @@ function resetQuiz() {
   currentQuestionNum.innerHTML = number + " / " + 5;
   myArray = [];
 }
+
+theme.addEventListener("click", () => {
+  theme.classList.toggle("light");
+  body.classList.toggle("light");
+  quizHomeBox.classList.toggle("light");
+  quizBox.classList.toggle("light");
+  questionBox.classList.toggle("light");
+  quizHomeBoxH4.classList.toggle("light");
+  quizOverBox.classList.toggle("light");
+  btn.classList.toggle("light");
+  currentQuestionNum.classList.toggle("light");
+  questionText.classList.toggle("light");
+  nextQuestionBtn.classList.toggle("light");
+  startAgainBtn.classList.toggle("light");
+  goToHomeBtn.classList.toggle("light");
+});
