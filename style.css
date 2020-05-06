@@ -71,13 +71,7 @@ body.light {
 .btn.light {
   background-color: #000000c5;
   border: 2px solid #00000015;
-  padding: 14px 40px;
   color: #ffffff;
-  font-size: 20px;
-  border-radius: 30px;
-  cursor: pointer;
-  white-space: nowrap;
-  margin: 0 10px;
 }
 
 .btn:focus {
@@ -272,8 +266,10 @@ body.light {
     font-size: 28px;
   }
   body .btn {
-    font-size: 30px;
+    font-size: 20px;
+    margin-top: 20px;
     font-weight: 400;
+    padding: 5px 30px;
   }
 }
 
