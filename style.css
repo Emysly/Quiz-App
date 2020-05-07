@@ -247,11 +247,7 @@ body.light {
   body .gif {
     width: 100%;
   }
-  .start-again-quiz-btn,
-  .go-home-btn {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+
   body .quiz-box .question-box .question-text {
     font-size: 25px;
   }
@@ -263,7 +259,7 @@ body.light {
     font-weight: 600;
   }
   body .quiz-box .stats .score-board {
-    font-size: 28px;
+    font-size: 20px;
   }
   body .btn {
     font-size: 20px;

@@ -302,7 +302,7 @@ function timeIsUp() {
 }
 
 function startTimer() {
-  let timeLimit = 15;
+  let timeLimit = 30;
   remainingTime.innerHTML = timeLimit;
   remainingTime.classList.remove("less-time");
   interval = setInterval(() => {
