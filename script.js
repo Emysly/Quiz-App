@@ -245,18 +245,19 @@ function nextQuestion() {
 
 function quizResult() {
   if (score === 0) {
-    document.querySelector(".gif").setAttribute("src", "./img/tenor (1).gif");
+    document
+      .querySelector(".gif")
+      .setAttribute("src", "./img/ezgif.com-optimize (2).gif");
   }
   if (score !== 0 && score < 5) {
-    document.querySelector(".gif").setAttribute("src", "./img/tenor.gif");
+    document
+      .querySelector(".gif")
+      .setAttribute("src", "./img/ezgif.com-optimize (1).gif");
   }
   if (score === 5) {
     document
       .querySelector(".gif")
-      .setAttribute(
-        "src",
-        "./img//c2c8349a34233a7276a94d1666939cd6_job-clipart-gif-find-share-on-giphy_442-302.gif"
-      );
+      .setAttribute("src", "./img/ezgif.com-optimize.gif");
   }
 
   const n = 5;
